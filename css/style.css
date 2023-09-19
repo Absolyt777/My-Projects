@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+@font-face {
+    font-family: "AirbnbCereal_W_Bd";
+    src: url(/fonts/AirbnbCereal_W_Bd.otf);
+}
+
+@font-face {
+    font-family: "AirbnbCereal_W_Bk";
+    src: url(/fonts/AirbnbCereal_W_Bk.otf);
+}
+
+@font-face {
+    font-family: "AirbnbCereal_W_Md";
+    src: url(/fonts/AirbnbCereal_W_Md.otf);
+}
+
+
+
+
+
+.bg-yellow {
+    max-width: 1598px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    background: #F9C62C;
+    padding: 30px 25px;
+}
+
+
+.bg-white {
+    max-width: 1544px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    background: #FFF;
+    padding: 30px 25px;
+}
+
+.bg-green {
+    max-width: 1490px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    background: #80EED3;
+    padding: 30px 25px;
+}
+
+.content {
+    max-width: 1440px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    background: #fdfcfc;
+
+}
+
+.wrapper {
+    display: flex;
+    padding: 28px 32px;
+    justify-content: space-between;
+}
+
+.header-item {
+    color: #000;
+    font-variant-numeric: stacked-fractions;
+    font-feature-settings: 'hlig' on, 'dlig' on;
+    font-family: "AirbnbCereal_W_Bd";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.header {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    background: #F4EBA7;
+    padding: 12px 11px 12px 39px;
+    border-radius: 8px 8px 0 0;
+}
+
+.header-inner-nav {
+    display: flex; 
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 416px;
+    margin: 0 28px 0 60px;
+}
+
+.header-search-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.header-search {
+    width: 343px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background: #F5F5F5;
+    padding: 16px;
+    padding-left: 44px;
+    color: var(--lines, #B8B8B8);
+    font-family: 'AirbnbCereal_W_Bd';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-search-wrapper::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(/img/header-search-picture.svg);
+    position: absolute;
+    z-index: 10;
+    top: 16px;
+    left: 16px;
+}
+
+.header-inner-profile {
+    width: 263px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header-login {
+    display: flex;
+}
+
+.header-login-name {
+    padding-right: 24px;
+    padding-left: 12px;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    width: 984px
+}
+
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 20px 16px;
+    gap: 27px;
+    align-items: center;
+}
+
+.controls-btn {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid #21201E;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-bg {
+    width: 870px;
+    height: 536px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden
+}
+
+.game {
+    width: 100%;
+    height: 100%;
+    background-color: #00E3B5;
+}
+
+.game-element {
+    position: absolute;
+}
+
+.game-ground {
+    bottom: -70px;
+}
+
+.game-tree {
+    left: 50%;
+    top: 30%;
+    width: 175px;
+}
+
+.game-mashroom {
+    top: 63%;
+    left: 50%;
+    width: 50px;
+}
+
+.game-bomb {
+    top: 30%;
+    left: 39%;
+    width: 35px;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.game-bottle {
+    top: 10%;
+    left: 40%;
+    width: 50px;
+    transform: scale(-1)
+}
+
+.game-diamond {
+    top: 62%;
+    left: 69%;
+    width: 65px;
+    opacity: 1;
+    transition: opacity 5s ease, transform 15s linear;
+}
+
+.game-diamond:hover {
+    opacity: 0;
+    transform: rotate(323deg);
+}
+
+.game-coin {
+    top: 66%;
+    left: 55%;
+    width: 25px;
+}
+
+.game-coin:hover {
+    transform: scale(1.2);
+}
+
+.game-cherry {
+    top: 37%;
+    left: 63%;
+    width: 20px;
+}
+
+.game-sky {
+    width: 235px;
+    top: 0%;
+    left: 0%;
+    animation: sky-walk 15s cubic-bezier(0.29, 0.37, 0.54, 0.64) alternate-reverse infinite;
+}
+
+.game-hero {
+    width: 100px;
+    height: 175px;
+    top: 38%;
+    left: 13%;
+}
+
+.game-bush {
+    width: 97px;
+    top: 366px;
+    left: 29px;
+}
+
+.game-hero-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.game-hero-body {
+    position: absolute;
+    width: 100px;
+}
+
+.game-hero-head {
+    position: absolute;
+    top: -10px;
+    left: 23px;
+    width: 50px;
+    z-index: 10;
+    animation-name: head-turn;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.game-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 71px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+.game-bg::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 71px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+}
+
+.button-player-line-silver {
+    position: absolute;
+    background: rgba(234, 234, 234, 0.50);
+    width: 100%;
+    height: 3px;
+    bottom: 37px;
+}
+
+.button-player-line-yellow {
+    background: #F9C62C;
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    bottom: 37px;
+}
+
+.player-button-left {
+    display: flex;
+    align-items: center;
+    padding-bottom: 11px;
+    padding-left: 38px;
+}
+
+.button-player-time {
+    color: #EAEAEA;
+    font-family: Helvetica;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-right: 30px;
+    letter-spacing: 0.13px;
+}
+
+.button-player-live::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #F9C62C;
+    border-radius: 50%;
+    bottom: 7px;
+    left: -10px;
+}
+
+.button-player-live {
+    color: #FFF;
+    font-variant-numeric: stacked-fractions;
+    font-feature-settings: 'hlig' on, 'dlig' on;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 151.278%;
+    /* 21.179px */
+    letter-spacing: 0.14px;
+    position: relative;
+}
+
+.button-player {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.button-player-live {
+    display: block;
+}
+
+.player-btn {
+    margin-right: 20px;
+}
+
+.player-button-right {
+    flex-direction: row;
+}
+
+ul.buttons-right-list {
+    display: flex;
+    align-items: center;
+}
+
+.buttons-right-item {
+    padding-right: 20px;
+    padding-bottom: 12px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    width: 984px;
+    padding: 20px 32px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background: #FFF;
+    margin: 20px 0;
+}
+
+.hero-left {
+    display: flex;
+    width: 404px;
+}
+
+.left-pict {
+    width: 24px;
+}
+
+.right-pict {
+    margin: 0 11px 0 20px;
+}
+
+.left-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 287px;
+    margin-left: 18px;
+}
+
+.hero-right {
+    display: flex;
+    align-items: center
+}
+
+.hero-left-btn {
+    display: flex;
+    padding: 4px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid #6F6F6F;
+    margin-right: 12px;
+}
+
+.hero-right-btn {
+    display: flex;
+    /* padding-left: 12px; */
+}
+
+.hero-right-people-txt {
+    padding-right: 12px;
+    color: #6F6F6F;
+    font-family: AirbnbCereal_W_Bd;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 12px */
+}
+
+.hero-right-eye-txt {
+    padding-right: 12px;
+    color: #6F6F6F;
+    font-family: AirbnbCereal_W_Bd;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 12px */
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    width: 984px;
+    padding: 20px 16px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background: #FFF;
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+.left-title {
+    color: #000;
+    font-family: Press Start 2P;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.5%;
+    /* 43.36px */
+    text-transform: uppercase;
+}
+
+.title-pict {
+    width: 279px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bottom {
+    display: flex;
+    padding: 20px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background: #FFF;
+}
+
+.bottom-name {
+    width: 279px;
+}
+
+.bottom-subtitle {
+    width: 279px;
+    color: #000;
+    font-family: 'Press Start 2P';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.5%;
+    /* 43.36px */
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.bottom-subtitle::before {
+    display: block;
+    content: "";
+    background: url(/img/left-small-pict.png);
+    width: 21.542px;
+    height: 47px;
+    position: absolute;
+    right: 29px;
+    bottom: 6px
+}
+
+.bottom-title {
+    width: 413px;
+    color: #131416;
+    font-family: AirbnbCereal_W_Bk;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 20px */
+    margin-top: 24px;
+}
+
+.bottom-right-gifts {
+    display: flex;
+    width: 113px;
+    flex-wrap: wrap;
+    gap: 11px 13.7px;
+}
+
+.bottom-gifts {
+    display: flex;
+    gap: 13px;
+}
+
+.bottom-right {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-right-text {
+    width: 238px;
+    color: #000;
+    font-family: AirbnbCereal_W_Bk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 19.6px */
+}
+
+.chat {
+    width: 368px;
+    /* height: 844px; */
+    background: black;
+    padding: 24px 24px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+
+.chat-images {
+    display: flex;
+    gap: 22.084px;
+}
+
+.title-text {
+    color: #FFFBFB;
+    font-family: "Press Start 2P";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.928px;
+    /* 130.8% */
+}
+
+.chat-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23.15px;
+    align-items: center;
+    border-bottom: solid #A7A1A1;
+    padding-bottom: 11px
+}
+
+.pleyers {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 11px;
+}
+
+.pleyers-chats {
+    display: flex;
+    align-items: center;
+}
+
+.pleyers-chats-cat {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5px;
+}
+
+.nickname-cat {
+    color: #F481DA;
+    font-family: AirbnbCereal_W_Md;
+    font-size: 12.208px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.928px;
+    /* 171.429% */
+    padding-left: 16px;
+}
+
+.nickname-cat-msg {
+    color: #FFFBFB;
+    font-family: AirbnbCereal_W_Md;
+    font-size: 12.208px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.928px;
+}
+
+.nickname-doctor {
+    color: #5FDBFD;
+    font-family: AirbnbCereal_W_Md;
+    font-size: 12.208px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.928px;
+    /* 171.429% */
+    padding-left: 16px;
+}
+
+.nickname-doctor-msg {
+    color: #FFFBFB;
+    font-family: AirbnbCereal_W_Md;
+    font-size: 12.208px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.928px;
+}
+
+.nickname-beast {
+    color: #00E3B5;
+    font-family: AirbnbCereal_W_Md;
+    font-size: 12.208px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.928px;
+    /* 171.429% */
+    padding-left: 16px;
+}
+
+.nickname-beast-msg {
+    color: #FFFBFB;
+    font-family: AirbnbCereal_W_Md;
+    font-size: 12.208px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.928px;
+}
+
+.nickname-guy {
+    color: #51D656;
+    font-family: AirbnbCereal_W_Md;
+    font-size: 12.208px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.928px;
+    /* 171.429% */
+    padding-left: 16px;
+}
+
+.nickname-guy-msg {
+    color: #FFFBFB;
+    font-family: AirbnbCereal_W_Md;
+    font-size: 12.208px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.928px;
+
+}
+
+.nickname-meow-msg {
+    color: #FFFBFB;
+    font-family: AirbnbCereal_W_Md;
+    font-size: 12.208px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.928px;
+}
+
+.nickname-meow {
+    color: #845BEA;
+    font-family: AirbnbCereal_W_Md;
+    font-size: 12.208px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.928px;
+    /* 171.429% */
+    padding-left: 16px;
+}
+
+
+
+.chats-send {
+    display: flex;
+    width: 100%;
+    padding: 8.72px 10.464px;
+    align-items: center;
+    gap: 10.464px;
+    background: #F4EBA7;
+    margin-left: -24px;
+    justify-content: space-between;
+}
+
+.chats-send-msg {
+    display: flex;
+    width: 267px;
+    height: 57px;
+    padding: 5.232px 19px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8.72px;
+    border-radius: 3.488px;
+    border: 1px solid #000;
+    background: #F5F5F5;
+}
+
+.chats-send {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 4px 4px;
+}
+
+@keyframes hero-shake {
+    0% {
+        top: 38%;
+
+    }
+
+    100% {
+        top: 42%;
+    }
+}
+
+@keyframes head-turn {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+
+    }
+}
+
+@keyframes appear {
+    0% {
+        left: -13%
+    }
+
+    100% {
+        left: 13%
+    }
+
+}
+
+.game-hero {
+    width: 100px;
+    height: 175px;
+    top: 38%;
+    left: 13%;
+    animation: hero-shake 3000ms cubic-bezier(0.29, 0.37, 0.54, 0.64) alternate-reverse infinite,
+        appear 3000ms cubic-bezier(0.29, 0.37, 0.54, 0.64) alternate-reverse infinite;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* члму воно працює? */
+
+@keyframes sky-walk {
+    0% {
+        left: 5%;
+
+    }
+
+    100% {
+        left: 70%;
+    }
+}

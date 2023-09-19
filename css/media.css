@@ -1,0 +1,127 @@
+@media (max-width:1600px) {
+    .header-search-wrapper {
+        display: none;
+    }
+
+    .chat {
+        display: none;
+    }
+
+    .content {
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+
+    .bg-yellow {
+        max-width: 1208px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:1220px) {
+    .bg-yellow {
+        border: none;
+        background: none;
+        padding: 0;
+    }
+
+
+    .bg-white {
+        border: none;
+        background: none;
+        padding: 0;
+    }
+
+    .bg-green {
+        border: none;
+        background: none;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1050px) { 
+    .content {
+        max-width: 936px;
+    }
+
+    .controls {
+        flex-direction: row;
+        width: 870px;
+        margin-bottom: 20px;
+        justify-content: space-around;
+    }
+
+    .inner {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .hero {
+        width: 870px;
+    } 
+
+    .bottom-right-gifts {
+        display: none;
+    } 
+} 
+
+@media (max-width: 360px){
+.content {
+    max-width: 936px;
+    width: 656px; 
+}
+
+.header {
+       width: 651px;
+}
+
+.header-inner-nav {
+    width: 70%;
+}
+
+.header-inner-profile {
+    width: 30%;
+} 
+
+
+.controls {
+    width: 595px;
+}
+
+.game-bg {
+    width: 595px;
+} 
+
+.game-mashroom {
+    top: 71%;
+} 
+
+.game-diamond {
+    top: 71%;
+} 
+
+.game-tree {
+    top: 39%;
+} 
+
+.game-coin {
+    top: 77%;
+} 
+
+.game-cherry {
+    top: 48%;
+} 
+
+.game-hero {
+    top: 51%;
+} 
+
+.hero {
+    width: 602px;
+} 
+
+.hero-left-btn {
+    display: none;
+}
+
+}
