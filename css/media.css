@@ -39,7 +39,7 @@
     }
 }
 
-@media (max-width: 1050px) { 
+@media (max-width: 1050px) {
     .content {
         max-width: 936px;
     }
@@ -58,70 +58,89 @@
 
     .hero {
         width: 870px;
-    } 
+    }
 
     .bottom-right-gifts {
         display: none;
-    } 
-} 
-
-@media (max-width: 360px){
-.content {
-    max-width: 936px;
-    width: 656px; 
+    }
 }
 
-.header {
-       width: 651px;
+@media (max-width: 768px) {
+    .controls {
+        width: 648px;
+    }
+
+    .game-bg {
+        width: 648px;
+    }
+
+    .hero {
+        width: 648px;
+    }
+
+    .bottom {
+        width: 648px;
+    }
+
 }
 
-.header-inner-nav {
-    width: 70%;
-}
+@media (max-width: 360px) {
+    .content {
+        max-width: 936px;
+        width: 656px;
+    }
 
-.header-inner-profile {
-    width: 30%;
-} 
+    .header {
+        width: 651px;
+    }
+
+    .header-inner-nav {
+        width: 70%;
+    }
+
+    .header-inner-profile {
+        width: 30%;
+    }
 
 
-.controls {
-    width: 595px;
-}
+    .controls {
+        width: 595px;
+    }
 
-.game-bg {
-    width: 595px;
-} 
+    .game-bg {
+        width: 595px;
+    }
 
-.game-mashroom {
-    top: 71%;
-} 
+    .game-mashroom {
+        top: 71%;
+    }
 
-.game-diamond {
-    top: 71%;
-} 
+    .game-diamond {
+        top: 71%;
+    }
 
-.game-tree {
-    top: 39%;
-} 
+    .game-tree {
+        top: 39%;
+    }
 
-.game-coin {
-    top: 77%;
-} 
+    .game-coin {
+        top: 77%;
+    }
 
-.game-cherry {
-    top: 48%;
-} 
+    .game-cherry {
+        top: 48%;
+    }
 
-.game-hero {
-    top: 51%;
-} 
+    .game-hero {
+        top: 51%;
+    }
 
-.hero {
-    width: 602px;
-} 
+    .hero {
+        width: 602px;
+    }
 
-.hero-left-btn {
-    display: none;
-}
+    .hero-left-btn {
+        display: none;
+    }
 
 }
