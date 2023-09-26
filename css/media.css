@@ -65,13 +65,37 @@
     }
 }
 
+@media (max-width: 900px) {
+    .header-list {
+        gap: 42px;
+        width: 100%;
+    }
+
+    .header-item:last-child {
+        display: none;
+    }
+
+    .content {
+        max-width: 668px;
+    }
+
+    .controls,
+    .game-bg {
+        width: 100%;
+    }
+
+    .inner {
+        width: 602px;
+    }
+}
+
 @media (max-width: 768px) {
     .controls {
-        width: 648px;
+        width: 100%;
     }
 
     .game-bg {
-        width: 648px;
+        width: 100%;
     }
 
     .hero {
@@ -82,41 +106,99 @@
         width: 648px;
     }
 
-}
-
-@media (max-width: 360px) {
-    .content {
-        max-width: 936px;
-        width: 656px;
+    .header-item:nth-child(2) {
+        display: none;
     }
 
-    .header {
-        width: 651px;
+    .header-list {
+        gap: 20px;
     }
 
-    .header-inner-nav {
-        width: 70%;
+    .button.header-login-menu-btn {
+        padding: 5px;
     }
 
     .header-inner-profile {
-        width: 30%;
+        width: 110px;
+    }
+
+    .header-login-name {
+        display: none
+    }
+}
+
+@media (max-width: 700px) {
+    .content {
+        max-width: 567px;
+    }
+
+    .inner {
+        width: 500px;
+    }
+
+    .game-ground {
+        bottom: 0%;
+    }
+}
+
+@media (max-width: 580px) {
+    .inner {
+        width: 400px;
+    }
+
+    .content {
+        max-width: 467px;
+    }
+
+    .controls-btn:last-child,
+    .controls-btn:nth-child(5),
+    .button-player-live,
+    .buttons-right-item:first-child,
+    .buttons-right-item:nth-child(2) {
+        display: none;
     }
 
 
-    .controls {
-        width: 595px;
+}
+
+@media (max-width: 500px) {
+    .header-list {
+        display: none;
     }
 
-    .game-bg {
-        width: 595px;
+
+}
+
+@media (max-width: 480px) {
+
+    .content {
+        max-width: 428px;
+    }
+
+    .inner {
+        width: 359px;
+    }
+
+    .game-ground {
+        bottom: -1%;
+    }
+
+    .game-bomb {
+        display: none;
+    }
+
+    .game-bottle {
+        display: none;
     }
 
     .game-mashroom {
-        top: 71%;
+        top: 74%;
+        left: 50%;
+        width: 50px;
     }
 
     .game-diamond {
-        top: 71%;
+        top: 74%;
     }
 
     .game-tree {
@@ -124,23 +206,76 @@
     }
 
     .game-coin {
-        top: 77%;
+        display: none;
     }
 
     .game-cherry {
-        top: 48%;
+        top: 55%;
     }
 
     .game-hero {
         top: 51%;
     }
 
-    .hero {
-        width: 602px;
+    .player-button-right {
+        flex-direction: row;
+        display: flex;
     }
 
-    .hero-left-btn {
+    .button-player-live {
         display: none;
     }
 
+    .button-player-time {
+        display: flex;
+    }
 }
+
+@media (max-width: 440px) {
+    .content {
+        max-width: 356px;
+    }
+
+    .inner {
+        width: 319px;
+    }
+
+    .wrapper {
+        padding: 20px 16px;
+    }
+
+    .controls {
+        padding: 10px;
+    }
+
+    .player-button-left {
+        padding-left: 15px;
+    }
+
+    .buttons-right-item {
+        padding-right: 15px;
+    }
+
+    .player-btn {
+        margin-right: 8px;
+    }
+
+    .player-btn:nth-child(2),
+    .buttons-right-item:nth-child(3),
+    .controls-btn:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) { 
+
+    .content {
+        max-width: 320px;
+    } 
+    
+    .inner {
+        width: 283px;
+    }
+}
+
+@media (max-width: 360px) {}
